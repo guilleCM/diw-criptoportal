@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Notice XXXXXX</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Compiled and minified jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<style>
+    html, body {
+        width: 100%;
+        height: 100%;
+    }
+    .section ul {
+        margin-left: 3%;
+    }
+    .busqueda{
+        display: block;
+    }
+    .busqueda i{
+        display: inline-block
+    }
+    .busqueda input {
+        display: inline-block;  
+        border-radius: 5px;
+        color: black;
+        padding: 8px 10px;
+    }
+    #sidebar-custom {
+        position: sticky;
+        top: 20px;
+    }
+    #search-icon-prefix {
+        position: absolute;
+        z-index: 1000;
+        color: black;
+        left: 15px;
+    }
+    .title {
+        font-size: 1.7vw;
+        font-weight: 900;
+    }
+    .sidebar-menu {
+        width: 100%;
+        height: 100%;
+    }
+    .sidebar-item {
+        width: 100%;
+        border-bottom: 1px solid;
+        padding: 5px 20px;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    .sidebar-title {
+        width: 100%;
+        font-size: 1.4vw;
+        font-weight: 900;
+        border-bottom: 1px solid;
+        padding: 5px 10px;
+    }
+    .no-margin {
+        padding: 0px !important;
+        margin: 0px;
+    }
+</style>
+<body>
+<header>
+    <nav >
+        <div class="nav-wrapper row container">
+            <div class="col s8">
+                <ul id="nav-mobile">
+                    <li><a href="#">Wiki</a></li>
+                    <li class="active"><a href="notices.html">Noticias</a></li>
+                    <li><a href="#">Listado</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Signup</a></li>
+                </ul>
+            </div>
+                <div class="col s4">
+                    <div class="row">
+                        <div class="input-field col s10 busqueda">
+                            <div id="search-icon-prefix"><i class="material-icons">search</i></div>
+                            <input id="icon_prefix" type="text" class="validate browser-default">
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="container">
+        <div class="row no-margin">
+            <div class="col s3 no-margin card sidebar" id="sidebar-custom">
+                <ul class="sidebar-menu" style="margin-bottom: 0px; margin-top: 0px;">
+                    <li class="sidebar-title">Noticias relacionadas</li>
+                    <li class="sidebar-item truncate">Walmart incorpora a Blockchain en su gestión logística</li>
+                    <li class="sidebar-item truncate">Plataforma de intercambio de Streamity inicia su ICO en el día de hoy</li>
+                    <li class="sidebar-item truncate">Bélgica advierte sobre 19 plataformas de negociación de criptomonedas que muestran signos de fraude</li>
+                    <li class="sidebar-item truncate">Eligma: el futuro de las compras en línea</li>
+                    <li class="sidebar-title">Noticias por categorías</li>
+                    <li class="sidebar-item dropdown-button" href='#' data-activates='dropdown1'>Monedas <span style="float: right;">↓</span></li>
+
+                      <!-- Dropdown Trigger -->
+                      <!-- <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Monedas</a> -->
+
+                      <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="#!">Bitcoin</a></li>
+                        <li><a href="#!">Ethereum</a></li>
+                        <li><a href="#!">Ripple</a></li>
+                        <li><a href="#!">Doge</a></li>
+                      </ul>
+
+                    <li class="sidebar-item">Wallets</li>
+                    <li class="sidebar-item">Instituciones</li>
+                    <li class="sidebar-item">SCAM</li>
+                    <li class="sidebar-item">ICO</li>
+                    <li class="sidebar-item">Exchanges</li>
+                </ul>
+            </div>
+            <div class="col s8 offset-s1 card content">
+                    <h3 class="title">PLATAFORMA SURCOREANA DE COMPRAS ONLINE PLANEA ACEPTAR PAGOS EN 12 CRIPTOMONEDAS DISTINTAS</h3>
+                    <p>La plataforma surcoreana de comercio en línea, Wemakeprice.com, anunció este lunes 29 de enero que <strong>planea aceptar pagos en criptomonedas </strong>durante el primer trimestre de este año.</p>
+                    <p>Lee Hanul, portavoz de Wemakeprice (WMP), <a href="http://m.koreatimes.co.kr/pad/news/view.jsp?req_newsidx=243260" target="_blank" rel="noopener nofollow">declaró</a> que esto será posible gracias a la alianza creada entre WMP y Bithump, la casa de cambio más grande del país asiático, de esta forma WMP se volvería la primera gran plataforma surcoreana de compras online en aceptar las criptomonedas como medio de pago.</p>
+                    <img class="responsive-img" src="https://i0.wp.com/criptotendencia.com/wp-content/uploads/2018/03/Blockchain-Sierra-Leona.jpg?w=1000&ssl=1"/>
+                    <p>De esta forma WMP y Bithump desarrollarían un <strong>sistema de pago que incluiría hasta 12 criptomonedas distintas</strong>, entre las cuales se encuentran <a href="https://www.criptonoticias.com/informacion/que-es-bitcoin/" target="_blank" rel="noopener">bitcoin</a>, <a href="https://www.criptonoticias.com/informacion/que-es-ethereum/" target="_blank" rel="noopener">ether</a> y ripple, que se incorporaría a la plataforma de pagos virtuales de WMP denominada Wonder Pay. Este nuevo sistema tendría la capacidad de mostrar en tiempo real el precio de cada criptomoneda, de esta manera se evita la confusión que puede causar la volatilidad de los precios de los criptoactivos a la hora de realizar una compra.</p>
+                    <p>Sin embargo, es probable que WMP espere a que el panorama regulatorio en Corea del Sur se aclare antes de poner este nuevo sistema en funcionamiento. Ya que por ahora <strong>están entrando en vigor nuevas <a href="https://www.criptonoticias.com/categorias/regulacion/" target="_blank" rel="noopener">regulaciones</a> gubernamentales sobre el mercado de criptomonedas en Corea de Sur.</strong>&nbsp;Tan solo un día después del anuncio de WMP, entrará en vigor la <a href="https://www.criptonoticias.com/regulacion/corea-sur-habilitara-cuentas-para-trading-criptomonedas-seis-bancos/" target="_blank" rel="noopener">nueva regulación</a> que eliminará el uso de las cuentas anónimas para las transacciones de criptomonedas. Hace una semana se anunció un <a href="https://www.criptonoticias.com/regulacion/56-millones-dolares-impuestos-tendran-pagar-casas-cambio-criptomonedas-surcorea/" target="_blank" rel="noopener">nuevo cobro de impuestos</a> para las casas de cambio de criptomonedas.</p>
+                    <p>Pero WMP no es la única compañía en este sector que se ha interesado en las criptomonedas, hace poco el gigante de ventas online, Ebay, afirmó que está considerando seriamente <a href="https://www.criptonoticias.com/adopcion/ebay-considerando-seriamente-aceptar-bitcoins-metodo-pago/" target="_blank" rel="noopener">empezar a aceptar pagos en criptomonedas</a>.</p>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+
+</footer>
+</body>
+</html>
