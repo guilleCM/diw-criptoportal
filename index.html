@@ -6,7 +6,7 @@
 	<style>
 		body{
 		  font-family: 'Open Sans', arial, sans-serif;
-		  background:rgb(123, 158, 158);
+		  background: white;
 
 		}
 		*{
@@ -83,7 +83,7 @@
 		#categories div h1, #categories div p{
 		  width:90%;
 		  padding:0 5%;
-		  background-color:#008080; background-color: rgba(0, 128, 128, 0.8);
+		  background-color:#008080; background-color: rgba(220, 115, 115, 0.8);
 		  font-family: 'Raleway', sans-serif;
 		  
 		  -webkit-transition: top .2s ease-out, bottom .2s ease-out, .2s padding .2s ease-out;
@@ -116,7 +116,13 @@
 
 
 		/* HOVER EFFECT  */
-
+		#categories li div h1:hover {
+			text-decoration: underline;
+			cursor: pointer;
+		}
+		#categories li div h1 {
+			transition: transform .2s; /* Animation */
+		}
 		#categories li div:hover h1 {
 		  bottom:50%;
 		  padding-bottom:10%;
@@ -162,43 +168,50 @@
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,700,300,200,100,900' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
 
-<ul id="categories" class="clr">
+<ul style="margin-top: 5px;" id="categories" class="clr">
 <!--   <li></li> -->
 	<li>
-      <div>
-        <img src="https://farm3.staticflickr.com/2878/10944255073_973d2cd25c.jpg" alt=""/>
-        <h1>This is a title a bit longer</h1>
-        <p>Some sample text about the article this hexagon leads to</p>
-    </div>
+      <div class="hex-link" id="wiki">
+        <img src="img/wiki.jpg" alt=""/>
+        <h1>Wiki</h1>
+        <p>Consulta toda la terminología y conceptos clave para entender las criptomonedas</p>
+	</div>
   </li>
     <li>
-      <div>
-        <img src="https://farm9.staticflickr.com/8461/8048823381_0fbc2d8efb.jpg" alt=""/>
-        <h1>This is a title</h1>
-        <p>Some sample text about the article this hexagon leads to</p>
+      <div class="hex-link" id="notices">
+        <img src="img/news.jpeg" alt=""/>
+        <h1>Noticias</h1>
+        <p>Mantente informado con todas las novedades y noticias</p>
     </div>
   </li>
   <li>
-      <div>
-        <img src="https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg" alt=""/>
-        <h1>This is a title</h1>
-        <p>Some sample text about the article this hexagon leads to</p>
+      <div class="hex-link" id="listado">
+        <img src="img/listado.jpg" style="left: -196%;" alt=""/>
+        <h1>Listado</h1>
+        <p>Consulta el valor de todas las criptomonedas</p>
     </div>
   </li>
   <li>
-      <div>
-        <img src="https://farm3.staticflickr.com/2827/10384422264_d9c7299146.jpg" alt=""/>
-        <h1>This is a title</h1>
-        <p>Some sample text about the article this hexagon leads to</p>
+      <div class="hex-link" id="login">
+        <img src="img/login.jpg" alt=""/>
+        <h1>Inicia sesion</h1>
+        <p>Accede a tu cuenta personal o regístra una nueva</p>
     </div>
   </li>
   <li>
-      <div>
-        <img src="https://farm7.staticflickr.com/6217/6216951796_e50778255c.jpg" alt=""/>
-        <h1>This is a title</h1>
-        <p>Some sample text about the article this hexagon leads to</p>
+      <div class="hex-link" id="about">
+        <img src="img/about.png" alt=""/>
+        <h1>Contacta con nosotros</h1>
+        <p>Quieres conocer nuestra filosofía. ¿Te gustaría trabajar con nosotros?</p>
     </div>
   </li>
 </ul>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>
+	$('.hex-link').click(function() {
+		// this.id
+		location.href = this.id+".html";
+	})
+</script>
 </body>
 </html>
